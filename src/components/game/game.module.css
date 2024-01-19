@@ -1,0 +1,38 @@
+.container {
+	margin: auto;
+	min-height: 95vh;
+	width: 99%;
+	background: #222222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	border: solid 3px darkorange;
+	border-radius: 10px;
+}
+
+.reset_btn {
+	width: 200px;
+	height: 40px;
+	margin: 25px;
+	cursor: pointer;
+	color: darkorange;
+	outline: none;
+	background: rgb(60, 60, 60);
+	border: 1px solid;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.reset_btn:hover {
+	background: rgb(97, 96, 96);
+	font-size: 22px;
+	transition: 0.1s all ease;
+}
+
+.info {
+	margin-top: 20px;
+	color: darkorange;
+	font-size: 24px;
+}
