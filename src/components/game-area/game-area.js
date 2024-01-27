@@ -1,15 +1,16 @@
-import React from 'react';
-import styles from './game-area.module.css';
-
+import { Component } from 'react';
 import { Cell } from '../cell/cell';
 
-export const GameArea = ({ cells, click }) => {
-	return (
-		<div className={styles.gameArea}>
-			{cells.map((cell, i) => (
-				<Cell key={i} value={cell} onClick={() => click(i)} />
-			))}
-		</div>
-	);
-};
- 
+export class GameArea extends Component {
+	render() {
+		const { click, cells } = this.props;
+
+		return (
+			<div className="gameArea-flex bg-orange-400 w-80 h-80">
+				{cells.map((cell, i) => (
+					<Cell key={i} value={cell} onClick={() => click(i)} />
+				))}
+			</div>
+		);
+	}
+}
